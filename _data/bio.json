@@ -8,7 +8,7 @@
     "website": "https://seanytak.github.io",
     "summary": "I am studying for a B.S. in Computer Science and a B.S. in Mathematics in the College of Natural Sciences at the University of Hawaii. I expect to graduate in Spring, 2020.",
     "location": {
-      "address": "",
+      "address": "1726 Maliu Street",
       "postalCode": "96822",
       "city": "Honolulu",
       "countryCode": "USA",
@@ -53,7 +53,8 @@
         "C",
         "C++",
         "Javascript",
-        "Python"
+        "Python",
+        "LaTeX"
       ]
     },
     {
@@ -64,6 +65,7 @@
         "Ubuntu",
         "Kali Linux",
         "Git/GitHub",
+        "gcc/g++"
       ]
     }
   ],
@@ -72,7 +74,7 @@
       "institution": "University of Hawaii, Honolulu, HI",
       "area": "Computer Science (expected Spring, 2020)",
       "studyType": "B.S.",
-      "startDate": "2016-08-21",
+      "startDate": "2016",
       "endDate": "Present",
       "gpa": "4.0",
       "courses": [
@@ -82,7 +84,7 @@
       "institution": "University of Hawaii, Honolulu, HI",
       "area": "Mathematics (expected Spring, 2020)",
       "studyType": "B.S.",
-      "startDate": "2017-01-13",
+      "startDate": "2017",
       "endDate": "Present",
       "gpa": "4.0",
       "courses": [
@@ -92,44 +94,44 @@
   "work": [
   ],
   "volunteer": [
-    {
-      "organization": "Center for Renewable Energy and Island Sustainability",
-      "website": "http://manoa.hawaii.edu/reis",
-      "position": "Software Developer",
-      "startDate": "2016-01-01",
-      "endDate": "Present",
-      "summary": "Lead developer for weather sensing project",
-      "highlights": [
-        "Design firmware for distributed weather sensor network",
-        "Maintain custom data collection and storage infrastructure"
-      ]
-    },
-  ],
-  "activities": [
       {
         "organization": "GreyHats",
-        "website": "",
+        "website": "https://greyhats.club/",
         "position": "Vice President",
-        "startDate": "2017",
+        "startDate": "May 2017",
         "endDate": "Present",
         "summary": "",
         "highlights": [
-          "Chair, ACM Manoa, 2016-Present",
-          "Member, IEEE Student Branch, 2014-Present",
-          "Webmaster/IT Officer, IEEE Student Branch, UH Manoa, 2012-2013"
         ]
     },
      {
        "organization": "Association for Computing Machinery",
-       "website": "",
+       "website": "https://acmanoa.github.io/",
        "position": "Treasurer",
-       "startDate": "2017",
+       "startDate": "May 2017",
        "endDate": "Present",
        "summary": "",
        "highlights": [
-         "Chair, ACM Manoa, 2016-Present",
-         "Member, IEEE Student Branch, 2014-Present",
-         "Webmaster/IT Officer, IEEE Student Branch, UH Manoa, 2012-2013"
+       ]
+     },
+     {
+       "organization": "GenCyber",
+       "website": "https://gencyber-hi.org/",
+       "position": "Student Instructor",
+       "startDate": "June 2017",
+       "endDate": "June 2017",
+       "summary": "The GenCyber Hawai`i program provides summer cybersecurity camp experiences for students and teachers. The goals of the program are to help all students understand correct and safe on-line behavior, increase diversity and interest in cybersecurity and careers in the cybersecurity workforce of the Nation, and improve teaching methods for delivering cybersecurity content in K-12 computer science curricula.",
+       "highlights": [
+       ]
+     },
+     {
+       "organization": "Camp Innovation",
+       "website": "",
+       "position": "Student Instructor",
+       "startDate": "July 2013",
+       "endDate": "July 2016",
+       "summary": "Camp Innovation is an annual week long summer camp that introduces robotics to elementary and middle school students. The goals of the program are to help students understand basic engineering and programming concepts.",
+       "highlights": [
        ]
      }
   ],
@@ -137,14 +139,20 @@
     {
       "title": "Manoa Merit Scholarship",
       "date": "2016-Present",
-      "awarder": "State of Hawaii",
-      "summary": "Scholarships awarded to incoming freshmen and continuing students who complete a rigorous high school curriculum with a minimum overall GPA of 3.0 at a Hawai'i public school."
+      "awarder": "University of Hawaii",
+      "summary": "Scholarships awarded to incoming freshmen and continuing students who complete a rigorous high school curriculum with a minimum overall GPA of 3.5 at a Hawai'i public school."
     },
     {
-      "title": "First place",
-      "date": "2015",
-      "awarder": "University of Hawaii Micromouse Competition",
-      "summary": "My team won first place in 2015.  See my portfolio site for more details."
+      "title": "Pynight: Python Programming Competition Winner",
+      "date": "June 2017",
+      "awarder": "Booz Allen Hamilton",
+      "summary": "My team won first place at a CTF-style Python Programming Competition. Part of Team \"Azure\""
+    },
+    {
+      "title": "NASA Space Apps Challenge Hackathon People's Choice Award",
+      "date": "April 2017",
+      "awarder": "NASA",
+      "summary": "My team won the Local People's Choice Award and competed at the National level"
     }
   ],
   "references": [
