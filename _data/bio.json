@@ -8,8 +8,8 @@
     "website": "https://seanytak.github.io",
     "summary": "I am studying for a B.S. in Computer Science and a B.S. in Mathematics in the College of Natural Sciences at the University of Hawaii. I expect to graduate in Spring, 2020.",
     "location": {
-      "address": "1726 Maliu Street",
-      "postalCode": "96822",
+      "address": "",
+      "postalCode": "96819",
       "city": "Honolulu",
       "countryCode": "USA",
       "region": "Hawaii"
@@ -65,6 +65,7 @@
         "Ubuntu",
         "Kali Linux",
         "Git/GitHub",
+        "Powershell",
         "gcc/g++"
       ]
     }
@@ -91,8 +92,6 @@
       ]
     }
   ],
-  "work": [
-  ],
   "volunteer": [
       {
         "organization": "GreyHats",
@@ -100,7 +99,7 @@
         "position": "Vice President",
         "startDate": "May 2017",
         "endDate": "Present",
-        "summary": "",
+        "summary": "Cybersecurity Club at the University of Hawaii at Manoa. Club activites include group learning over cybersecurity concepts, competing in CTFs, and networking with the local cyber community.",
         "highlights": [
         ]
     },
@@ -110,7 +109,7 @@
        "position": "Treasurer",
        "startDate": "May 2017",
        "endDate": "Present",
-       "summary": "",
+       "summary": "Student Chapter at the University of Hawaii at Manoa. Club activites include ",
        "highlights": [
        ]
      },
@@ -137,12 +136,6 @@
   ],
   "awards": [
     {
-      "title": "Manoa Merit Scholarship",
-      "date": "2016-Present",
-      "awarder": "University of Hawaii",
-      "summary": "Scholarships awarded to incoming freshmen and continuing students who complete a rigorous high school curriculum with a minimum overall GPA of 3.5 at a Hawai'i public school."
-    },
-    {
       "title": "Pynight: Python Programming Competition Winner",
       "date": "June 2017",
       "awarder": "Booz Allen Hamilton",
@@ -153,6 +146,12 @@
       "date": "April 2017",
       "awarder": "NASA",
       "summary": "My team won the Local People's Choice Award and competed at the National level"
+    },
+    {
+      "title": "Manoa Merit Scholarship",
+      "date": "2016-Present",
+      "awarder": "University of Hawaii",
+      "summary": "Scholarships awarded to incoming freshmen and continuing students who complete a rigorous high school curriculum with a minimum overall GPA of 3.5 at a Hawai'i public school."
     }
   ],
   "references": [
