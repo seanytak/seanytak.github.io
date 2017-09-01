@@ -109,7 +109,7 @@
        "position": "Treasurer",
        "startDate": "May 2017",
        "endDate": "Present",
-       "summary": "Student Chapter at the University of Hawaii at Manoa. Club activites include ",
+       "summary": "Student Chapter at the University of Hawaii at Manoa. Club activites include hosting technical events, special interest groups, and networking opportunities",
        "highlights": [
        ]
      },
@@ -136,7 +136,7 @@
   ],
   "awards": [
     {
-      "title": "Pynight: Python Programming Competition Winner",
+      "title": "PyNight: Python Programming Competition Winner",
       "date": "June 2017",
       "awarder": "Booz Allen Hamilton",
       "summary": "My team won first place at a CTF-style Python Programming Competition. Part of Team \"Azure\""

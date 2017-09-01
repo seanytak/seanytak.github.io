@@ -1,27 +1,25 @@
 ---
 layout: project
 type: project
-image: images/micromouse.jpg
+image: images/hunter.png
 title: Hunter's Ground
 permalink: projects/hunters-ground
 date: 2016
 labels:
   - Java
   - Pixel Art
-  - Eclipse
+  - EZ Graphics
 summary:
 ---
+<iframe width="560" height="315" src="https://www.youtube.com/watch?v=Q2FQRYnHP0U" frameborder="0" allowfullscreen=""></iframe>
 
-<div class="ui small rounded images">
-  <img class="ui image" src="../images/micromouse-robot.png">
-  <img class="ui image" src="../images/micromouse-robot-2.jpg">
-  <img class="ui image" src="../images/micromouse.jpg">
-  <img class="ui image" src="../images/micromouse-circuit.png">
-</div>
+<h1> Introduction </h1>
+Hunter's Ground is a game developed in Java for the ICS 111 final project. For the final project, we had the option to create anything we wanted as long as we utilized the EZ.java library as the core of our project.
 
-Hunter's Ground is a game developed in Java for the ICS 111 final project.
-Micromouse is an event where small robot “mice” solve a 16 x 16 maze.  Events are held worldwide.  The maze is made up of a 16 by 16 gird of cells, each 180 mm square with walls 50 mm high.  The mice are completely autonomous robots that must find their way from a predetermined starting position to the central area of the maze unaided.  The mouse will need to keep track of where it is, discover walls as it explores, map out the maze and detect when it has reached the center.  having reached the center, the mouse will typically perform additional searches of the maze until it has found the most optimal route from the start to the center.  Once the most optimal route has been determined, the mouse will run that route in the shortest possible time.
+<h1> About </h1>
+Hunter's Ground is a survival based game pitting the player against a horde of T-rexes. The objective of the game is to kill as many T-rexes in the allotted time without dying. For the project, I developed the player's controls, the weapons, the physics engine, as well as the various terrain elements. Along with the programmatic implementation of these features, I also custom made the artwork components for my parts using [Piskel](http://www.piskelapp.com/).
 
-For this project, I was the lead programmer who was responsible for programming the various capabilities of the mouse.  I started by programming the basics, such as sensor polling and motor actuation using interrupts.  From there, I then programmed the basic PD controls for the motors of the mouse.  The PD control the drive so that the mouse would stay centered while traversing the maze and keep the mouse driving straight.  I also programmed basic algorithms used to solve the maze such as a right wall hugger and a left wall hugger algorithm.  From there I worked on a flood-fill algorithm to help the mouse track where it is in the maze, and to map the route it takes.  We finished with the fastest mouse who finished the maze within our college.
+<h1> Learning Outcomes </h1>
+Hunter's Ground was a fun medium sized project that I was able to take from a planning phase to a full blown implementation of it. While programming it was moderately challenging, the larger lesson from the project was understanding how to slowly build a software project of the course of several weeks. From testing the weapons and the physics engine in their own environments to letting the player run around in various simulations, building Hunter's Ground was a valuable experience to my development as a software engineer. 
 
-You can learn more at the [UH Micromouse Website](http://www-ee.eng.hawaii.edu/~mmouse/about.html).
+Source: <a href="https://github.com/seanytak/hunters-ground"><i class="large github icon"></i>Hunters Ground</a>
