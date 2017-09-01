@@ -12,7 +12,6 @@ labels:
 summary: Fly! is a fun and interactive flight simulator designed for kid passengers to see what's going on under the Earth as they fly above it.
 ---
 
-<img class="ui medium right floated rounded image" src="../images/vacay-home-page.png">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/UeNcsnRxHJM" frameborder="0" allowfullscreen=""></iframe>
 
 <h1> Introduction </h1>
@@ -24,10 +23,10 @@ Fly! was designed for the Pilots Plus sub-category of the Space Apps Challenge w
 <h1> Implementation </h1>
 The core design of Fly! uses models created in [Blender](https://www.blender.org/) which were exported as JSON data and implemented in our web application using [Three.js](https://threejs.org/). Fly! incorporates data from the following sources:
 <ul>
-<li> [OpenWeather API](https://openweathermap.org/api) - To show the weather around the plane </li>
-<li> [Google Geocoder](https://developers.google.com/maps/documentation/geocoding/start) - To find the geographical coordinates our plane is in </li>
-<li> [Google Map's API](https://developers.google.com/maps/) - To find locations of interest around the plane </li>
-<li> [NASA's Land Satellite Images](https://api.nasa.gov/api.html#EONET) - To find the biome of the earth underneath the plane </li>
+<li> To show the weather around the plane - [OpenWeather API](https://openweathermap.org/api) </li>
+<li> To find the geographical coordinates our plane is in - [Google Geocoder](https://developers.google.com/maps/documentation/geocoding/start) </li>
+<li> To find locations of interest around the plane - [Google Map's API](https://developers.google.com/maps/) </li>
+<li> To find the biome of the earth underneath the plane - [NASA's Land Satellite Images](https://api.nasa.gov/api.html#EONET) </li>
 </ul>
 
 <h1> Learning Outcomes </h1>
