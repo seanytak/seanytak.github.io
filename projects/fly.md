@@ -23,7 +23,7 @@ Fly! was designed for the Pilots Plus sub-category of the Space Apps Challenge w
 <h1> Implementation </h1>
 The core design of Fly! uses models created in [Blender](https://www.blender.org/) which were exported as JSON data and implemented in our web application using [Three.js](https://threejs.org/). Fly! incorporates data from the following sources:
 <ul>
-<li> To show the weather around the plane - <a href="https://openweathermap.org/api">OpenWeather API]</a> </li>
+<li> To show the weather around the plane - <a href="https://openweathermap.org/api">OpenWeather API</a> </li>
 <li> To find the geographical coordinates our plane is in - <a href="https://developers.google.com/maps/documentation/geocoding/start">Google Geocoder</a> </li>
 <li> To find locations of interest around the plane - <a href="https://developers.google.com/maps/">Google Map's API</a> </li>
 <li> To find the biome of the earth underneath the plane - <a href="https://api.nasa.gov/api.html#EONET">NASA's Land Satellite Images</a> </li>
