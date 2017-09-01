@@ -12,7 +12,7 @@ labels:
 summary: Hunter's Ground is a game developed in Java for the ICS 111 final project.
 ---
 
-<iframe width="560" height="315" src="https://www.youtube.com/watch?v=Q2FQRYnHP0U" frameborder="0" allowfullscreen=""></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Q2FQRYnHP0U" frameborder="0" allowfullscreen=""></iframe>
 
 <h1> Introduction </h1>
 Hunter's Ground is a game developed in Java for the ICS 111 final project that placed 3rd in the class competition. For the final project, we had the option to create anything we wanted as long as we utilized the EZ.java library as the core of our project.
