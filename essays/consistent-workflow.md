@@ -74,7 +74,6 @@ This time we actually added more comments but the usage was much poorer. While t
 Coding Conventions can improve readability, as it's most likely easier to read sumOfIntegers over $um0FINT. However, beyond what we covered in the section "Coding Conventions" readability is about creating a logical flow in your code, combining trivial components and separating logically complex ones into different sections whenever necessary. Let's look at a quick practice underscore example:
 
 ```javascript
-// Takes a List and finds the
 function maxDegrees(data) {
     return _.max(_.mapObject(_.groupBy(data, "FISCAL_YEAR"), totalDegrees), element => element);
 }
@@ -84,7 +83,7 @@ While the code is "elegantly" written in a single line of code (we'll disregard 
 
 ```javascript
 function maxDegrees(data) {
-	const year = _.groupBy(data, "FISCAL_YEAR");
+  const year = _.groupBy(data, "FISCAL_YEAR");
   const totals = _.mapObject(year, totalDegrees);
   return _.max(totals, element => element);
 }
@@ -96,4 +95,7 @@ As we can see, all we did was divide each different underscore function into it'
 
 2. It allows us, the original developer, to add comments neatly to what each component is doing.
 
-Of course, this isn't to say we need to divide the code based on whenever we call an underscore function, but it's important to keep in mind t
+Of course, this isn't to say we need to divide the code based on whenever we call an underscore function, but it's important to keep in mind that the code itself should be written in some logical fashion that allows other software engineers a simpler time when trying to understand the code.
+
+## Focusing on the Hard Parts of Coding Standards
+Creating good comments and optimizing the readability of code can be difficult sometimes; after all, software engineers of various skill levels will have a very different idea when to use comments and how they'll choose to structure their code. While being able to write well documented code may be challenging for software engineers of all skill levels, the beautiful part of Coding Standards today is that many developer tools today have eliminated trivial problems software engineers come across so we can focus on the big problems at hand. Writing in Intellij allows me to write code faster and combined with ESLint, allows me to focus less on formatting my code and random syntax errors, instead allowing me to develop code to solve problems efficiently. Coding Standards are a critically important software engineering principle to ensure that we can spend more time developing code and creating solutions, and less time trying to figure out and read through code to make sense of it in the first place.
