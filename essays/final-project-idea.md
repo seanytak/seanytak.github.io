@@ -35,5 +35,4 @@ Introducing, Vending Vote, the democratic solution for UH Manoa students to get 
 
 # Authors
 Written by:
-Sean Takafuji
-Andrew Obatake
+Sean Takafuji and Andrew Obatake
