@@ -14,7 +14,7 @@ Meteor is a heavyweight web framework that handles the complexities of web devel
 
 ```
 <tbody>
-\{\{#each contact in contactsList\}\}
+\{{#each contact in contactsList}}
   <tr>
     <td>\{\{contact.first\}\}</td>
     <td>\{\{contact.last\}\}</td>
