@@ -14,16 +14,16 @@ Meteor is a heavyweight web framework that handles the complexities of web devel
 
 ```
 <tbody>
-{{#each contact in contactsList}}
+\{\{#each contact in contactsList\}\}
   <tr>
-    <td>{{contact.first}}</td>
-    <td>{{contact.last}}</td>
-    <td>{{contact.address}}</td>
-    <td>{{contact.telephone}}</td>
-    <td>{{contact.email}}</td>
-    <td><a href="{{pathFor 'Edit_Contact_Page' _id=contact._id}}">Edit</a></td>
+    <td>\{\{contact.first\}\}</td>
+    <td>\{\{contact.last\}\}</td>
+    <td>\{\{contact.address\}\}</td>
+    <td>\{\{contact.telephone\}\}</td>
+    <td>\{\{contact.email\}\}</td>
+    <td><a href="\{\{pathFor 'Edit_Contact_Page' _id=contact._id\}\}">Edit</a></td>
   </tr>
-{{/each}}
+\{\{/each\}\}
 </tbody>
 ```
 
@@ -43,4 +43,4 @@ Through Meteor, we can quickly develop our web application without worrying abou
 Meteor at its core is a framework that simplifies the web development process for a developer in the long run. However, for the developer this is not apparent early on when utilizing Meteor in fact its nearly the complete opposite. By changing the usual relationship between HTML, CSS, and JavaScript for the application, the developer needs to relearn how to build the application the Meteor way. For example, the routing of pages is handled by the FlowRouter turning href into an obsolete construct. Furthermore, BlazeJS completely controls the way web pages are displayed utilizing templates for all portions of the web page. The plethora of tools that Meteor allows is at first overwhelming, especially since these are not simple programmatic constructs, these are constructs that allow scalability to web applications. Unlike learning a new programming language, the tools Meteor brings are various APIs brought together that for a developer with little prior web development experience, can be overwhelming at first.
 
 # Saving Time in the Long Run
-Learning Meteor can be daunting at first but the time spent learning the framework will be well spent in the end. Syncing data between the client and server can be a daunting task full of programmatic and security issues if not implemented correctly. By utilizing a well-tested open source framework like Meteor, more time will be spent on developing the application in a meaningful way, adding features and styling content over fixing fundamental flaws in the architecture of the application. 
+Learning Meteor can be daunting at first but the time spent learning the framework will be well spent in the end. Syncing data between the client and server can be a daunting task full of programmatic and security issues if not implemented correctly. By utilizing a well-tested open source framework like Meteor, more time will be spent on developing the application in a meaningful way, adding features and styling content over fixing fundamental flaws in the architecture of the application.
