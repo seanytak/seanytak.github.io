@@ -1,7 +1,7 @@
 ---
 layout: essay
 type: essay
-title: The New Age
+title: Code Smart
 date: 2017-10-26
 labels:
   - Meteor
