@@ -1,7 +1,7 @@
 ---
 layout: essay
 type: essay
-title: Code Smart
+title: The New Age
 date: 2017-10-26
 labels:
   - Meteor
@@ -13,18 +13,20 @@ labels:
 Meteor is a heavyweight web framework that handles the complexities of web development on both the front end and back end. While Meteor is a JavaScript framework, it completely transforms the web development process from simple HTML, CSS, and JavaScript into an entity of its own. Take a simple table body entry:
 
 ```
+{% raw %}
 <tbody>
-\{{#each contact in contactsList}}
+{{#each contact in contactsList}}
   <tr>
-    <td>\{\{contact.first\}\}</td>
-    <td>\{\{contact.last\}\}</td>
-    <td>\{\{contact.address\}\}</td>
-    <td>\{\{contact.telephone\}\}</td>
-    <td>\{\{contact.email\}\}</td>
-    <td><a href="\{\{pathFor 'Edit_Contact_Page' _id=contact._id\}\}">Edit</a></td>
+    <td>{{contact.first}}</td>
+    <td>{{contact.last}}</td>
+    <td>{{contact.address}}</td>
+    <td>{{contact.telephone}}</td>
+    <td>{{contact.email}}</td>
+    <td><a href="{{pathFor 'Edit_Contact_Page' _id=contact._id}}">Edit</a></td>
   </tr>
-\{\{/each\}\}
+{{/each}}
 </tbody>
+{% endraw %}
 ```
 
 Meteor provides its own built in reactive HTML templates in the form of BlazeJS. Tools such as BlazeJS allow concise powerful constructs to be quickly utilized within our application without needing to construct complicated JavaScript functions to handle this behavior. Now we take a look at the JavaScript that utilizes this HTML template:
