@@ -18,4 +18,4 @@ After reading the excerpt "The code I’m still ashamed of", you should already 
 
 ## What ethics?
 
-
+Ethics is a very touchy subject, as everyone has some sort of opinion on what is ethical and what is not.  For example, while most people would feel ashamed and think that the code was the stimulus of the suicide, there are others who believe that the girl brought it upon herself, and that the writer should feel no shame in what he did.  That is their take on ethics, which shows that ethics are not always black-and-white; it could go either way if no one fully understands the situation they are in.  It also depends on how you feel during the moment whatever occurence is happening. 
