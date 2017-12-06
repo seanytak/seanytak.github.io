@@ -1,7 +1,7 @@
 ---
 layout: essay
 type: essay
-title: Structure is an Art
+title: Divide and Conquer
 date: 2017-12-05
 labels:
   - Design Patterns
@@ -13,4 +13,8 @@ We face a lot of problems in our daily life, and ideally we'd like to deal with 
 Web Development takes a large amount of multitasking inherently. Whenever developing a product, it requires the usage of multiple technologies to effectively solve the problem to create a modern, professional product. To do this, using an optimal Design Pattern that suits the structure of the problem is a major player on the road to success. One Design Pattern that has proven effective in the road of Web Development is the Model-View-Controller pattern. The philosophy behind this design, is to separate the product into three clear components:
 1. Model - The database of the system. All data flowing through the system is stored in a well-organized component within the codebase
 2. View - The frontend of the system. Users interacting with the system are presented with certain pages that are well-presentable and appeal to the users
-3. Controller - The handler of the system. Communication between the different components is handled through this part of the  
+3. Controller - The handler of the system. Communication between the different components is handled through this part of the system
+By implementing the Model-View-Controller Design Pattern, the developer clearly defines a structure which for the application where various components that are intertwined are clearly separated in a manner that smoothens development. Focus from a developer is spent on a single piece of the larger application defined solely through the design of the system itself.
+
+# Logical flow
+Design Patterns create an optimal problem structure for the developer allowing clean traversal in the development process. Components are built incrementally in a sequence that is reflected upon within the structure of the codebase itself. While certain design patterns require the usage of multiple files to solve one task such as adding a new page to the system, the process which the page is built in is done in a logical, organized fashion: Design the page, add functionality to the page, add backend support to the page, link the page to the rest of the application. Design Patterns allow developers to clearly define the tasks they are working on and solve problems quickly and efficiently. Design Patterns are more than simply the way we can design our projects, it's the way we design how we develop, a manner which can be instrumental in clean completion of a project.
