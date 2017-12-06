@@ -1,7 +1,7 @@
 ---
 layout: essay
 type: essay
-title: Divide and Conquer
+title: Designing the Development
 date: 2017-12-05
 labels:
   - Design Patterns
