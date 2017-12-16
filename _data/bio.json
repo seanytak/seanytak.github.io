@@ -42,7 +42,12 @@
       "name": "Artificial intelligence",
       "keywords": [
       ]
-    }
+  },
+  {
+    "name": "Big Data",
+    "keywords": [
+    ]
+  }
   ],
   "skills": [
     {
@@ -54,6 +59,10 @@
         "C++",
         "Javascript",
         "Python",
+        "Semantic UI",
+        "Meteor",
+        "HTML",
+        "CSS",
         "LaTeX"
       ]
     },
@@ -91,6 +100,18 @@
       "courses": [
       ]
     }
+  ],
+  "work": [
+    {
+      "company": "University of Hawaii at Manoa",
+      "position": "Mathematics Tutor and Grader",
+      "website": "http://natsci.manoa.hawaii.edu/learningemporium.php",
+      "startDate": "Sept 2017",
+      "endDate": "Present",
+      "summary": "Tutor Students in Trigonometry, Pre-Calculus, and Calculus",
+      "highlights": [
+      ]
+    },
   ],
   "volunteer": [
       {
