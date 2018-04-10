@@ -51,7 +51,7 @@
   ],
   "skills": [
     {
-      "name": "Languages and Frameworks",
+      "name": "Languages",
       "level": "",
       "keywords": [
         "Java",
@@ -59,11 +59,22 @@
         "C++",
         "Javascript",
         "Python",
-        "Semantic UI",
-        "Meteor",
+        "R",
+        "C#",
         "HTML",
         "CSS",
-        "LaTeX"
+        "SQL",
+        "LaTeX",
+      ]
+    },
+    {
+      "name": "Frameworks",
+      "level": "",
+      "keywords": [
+        "Semantic UI",
+        "Bootstrap",
+        "Meteor",
+        "Django",
       ]
     },
     {
@@ -75,7 +86,9 @@
         "Kali Linux",
         "Git/GitHub",
         "Powershell",
-        "gcc/g++"
+        "gcc/g++",
+        "Wireshark",
+        "Nmap",
       ]
     }
   ],
@@ -88,6 +101,15 @@
       "endDate": "Present",
       "gpa": "4.0",
       "courses": [
+        "ICS 111 (Java Programming)",
+        "ICS 141 / 241 (Discrete Mathematics I & II)",
+        "ICS 211 (Data Structures)",
+        "ICS 212 (C Programming)",
+        "ICS 311 (Algorithms)",
+        "ICS 314 / 414 (Software Engineering I & II)",
+        "ICS 332 (Operating Systems)",
+        "ICS 361 (AI Programming)",
+        "ICS 622 (Network Science)"
       ]
     },
     {
@@ -98,17 +120,32 @@
       "endDate": "Present",
       "gpa": "4.0",
       "courses": [
+        "MATH 251, 252, 243, 244 (Calculus I - IV)",
+        "MATH 311 (Linear Algebra)",
+        "MATH 321 (Intro to Advanced Mathematics)",
+        "MATH 372 (Probability and Statistics I)",
       ]
     }
   ],
   "work": [
     {
       "company": "University of Hawaii at Manoa",
-      "position": "Mathematics Tutor and Grader",
+      "position": "Software Developer",
+      "website": "",
+      "startDate": "January 2018",
+      "endDate": "Present",
+      "summary": "Developing a web application for the Geography Department under Professor Yi Qiang",
+      "highlights": [
+        "Developed the application structure building it using Django, Semantic UI, Bootstrap, and SQLite",
+      ]
+    },
+    {
+      "company": "University of Hawaii at Manoa",
+      "position": "Computer Science and Mathematics Tutor",
       "website": "http://natsci.manoa.hawaii.edu/learningemporium.php",
       "startDate": "Sept 2017",
       "endDate": "Present",
-      "summary": "Tutor Students in Trigonometry, Pre-Calculus, and Calculus",
+      "summary": "Tutor Students in Introductory Computer Science and Mathematics courses",
       "highlights": [
       ]
     },
@@ -157,16 +194,22 @@
   ],
   "awards": [
     {
+      "title": "AT&T Hackathon: Best VR Application",
+      "date": "March 2018",
+      "awarder": "AT&T",
+      "summary": "My team won the Best VR Application for our project \"On the Spot\""
+    },
+    {
       "title": "PyNight: Python Programming Competition Winner",
       "date": "June 2017",
       "awarder": "Booz Allen Hamilton",
       "summary": "My team won first place at a CTF-style Python Programming Competition. Part of Team \"Azure\""
     },
     {
-      "title": "NASA Space Apps Challenge Hackathon People's Choice Award",
+      "title": "NASA Space Apps Challenge Hackathon: People's Choice Award",
       "date": "April 2017",
       "awarder": "NASA",
-      "summary": "My team won the Local People's Choice Award and competed at the National level"
+      "summary": "My team won the Local People's Choice Award and competed at the National level for our project \"Fly!\""
     },
     {
       "title": "Manoa Merit Scholarship",
