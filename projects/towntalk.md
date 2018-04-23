@@ -6,8 +6,8 @@ title: Town Talk
 permalink: projects/towntalk
 date: 2017
 labels:
-  - html
-  - css
+  - HTML5
+  - CSS3
   - JavaScript
   - jQuery
 summary: Town Talk is a web application that serves as a social network for small communities to interact with each more frequently and more interpersonally

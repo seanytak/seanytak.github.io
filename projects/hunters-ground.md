@@ -1,14 +1,14 @@
 ---
 layout: project
 type: project
-image: images/hunter.png
+image: images/hunters_ground/hunter.png
 title: Hunter's Ground
 permalink: projects/hunters-ground
 date: 2016
 labels:
   - Java
   - Pixel Art
-  - EZ Graphics
+  - EZ.java
 summary: Hunter's Ground is a game developed in Java for the ICS 111 final project.
 ---
 

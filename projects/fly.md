@@ -1,14 +1,16 @@
 ---
 layout: project
 type: project
-image: images/fly.png
+image: images/fly/fly.png
 title: Fly!
 permalink: projects/fly
 date: 2017
 labels:
-  - Three.js
-  - Blender
+  - HTML5
+  - CSS3
+  - JavaScript
   - jQuery
+  - Three.js
 summary: Fly! is a fun and interactive flight simulator designed for kid passengers to see what's going on under the Earth as they fly above it.
 ---
 
