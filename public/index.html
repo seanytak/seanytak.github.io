@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css" integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+        crossorigin="" />
+
+    <!-- Make sure you put this AFTER Leaflet's CSS -->
+    <script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js" integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
+        crossorigin=""></script>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+
+    <title>Data Visualization Project 1</title>
+</head>
+
+<body>
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Cholera Outbreak in 1854</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#london-cholera">Cholera Incidents <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#naples-cholera">Fatalities by Gender</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#uk-census">UK Census</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="canoe">View in High Resolution</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div id="london-cholera" class="row justify-content-left" style="margin: 2em 0 1em 0">
+        <div class='col-11'>
+            <div class="card">
+                <div class="card-body">
+                    <h2 class="card-title">London Cholera Outbreak in 1854</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row justify-content-center" style="height: 1150px">
+        <div class="col-8">
+            <div class="card">
+                <div id="fatality_map" style="width: 100%; height: 600px;"></div>
+            </div>
+            <div class="card">
+                <div id="time_series"></div>
+                <div class='card-footer'>
+                    The Cholera incidents in London steadily occurred starting on August 19 with a sudden rise on
+                    August 31 peaking on September 1 and September 2. Cases continued to appear at a high rate until
+                    September 12 where it eventually slowed down but steadily occurred until September 29.
+                </div>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="card">
+                <table id="fatality_table"></table>
+            </div>
+        </div>
+    </div>
+    <div id="naples-cholera" class="row justify-content-left" style="margin: 2em 0 1em 0">
+        <div class="col-11">
+            <div class="card">
+                <div class="card-body">
+                    <h2 class="card-title">Naples Cholera Outbreak in 1854</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Number of Fatalities by Gender -->
+    <div class="row justify-content-center">
+        <div class="col-8">
+            <div class="card">
+                <div id="gender_fatality_bar"></div>
+                <div class="card-footer">
+                    The Cholera Outbreak in the Naples area resulted in numerous fatalities affecting all age groups
+                    with the elderly individuals experiencing a higher death rate.
+                </div>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="card">
+                <div id="gender_fatality_table"></div>
+            </div>
+        </div>
+    </div>
+    <div id="uk-census" class="row justify-content-left" style="margin: 2em 0 1em 0">
+        <div class="col-11">
+            <div class="card">
+                <div class="card-body">
+                    <h2 class="card-title">United Kingdom Census for 1851</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Bar Chart and Table of UK Census -->
+    <div class="row justify-content-center">
+        <div class="col-8">
+            <div class="card">
+                <div id="population_chart"></div>
+            </div>
+            <div class="card-footer">
+                The population of the United Kingdom in 1851 contained more individuals in the younger age groups than
+                the older age groups for both males and females. Noticeably, the population between genders is also
+                roughly equal with more females than males in the adult age groups and less females than males in the
+                minor age groups.
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="card">
+                <div id="population_table"></div>
+            </div>
+        </div>
+    </div>
+    <!-- Pie Charts of Population Distribution -->
+    <div class="row justify-content-center">
+        <div class="col-6">
+            <div class="card">
+                <div id="male_population"></div>
+                <div class="card-footer">
+                    The male population in the United Kingdom during 1851 was made up of roughly a quarter infant to
+                    elementary age children, a fifth teenagers, a third young to middle aged adults, and a fifth
+                    elderly adults.
+                </div>
+            </div>
+            <div class="card">
+                <div id="female_population"></div>
+                <div class="card-footer">
+                    The female population in the United Kingdom during 1851 was made up of roughly a quarter infant to
+                    elementary age children, a fifth teenagers, a third young to middle aged adults, and a fifth
+                    elderly adults.
+                </div>
+            </div>
+        </div>
+        <div class="col-6">
+            <div class="card">
+                <div id="total_population"></div>
+            </div>
+            <div class="card-footer">
+                The total population in the United Kingdom during 1851 was roughly equal between males and females with
+                a slightly higher number of females.
+            </div>
+        </div>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-6">
+            <div class="card">
+                <div id="total_population"></div>
+            </div>
+        </div>
+    </div>
+    <div id="about" class="row justify-content-center">
+        <div class="col-6">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">About the Authors</h5>
+                    <!-- <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> -->
+                    <p class="card-text">Visualization Created By: Sean Takafuji (seanytak@hawaii.edu)</p>
+                    <p class="card-text">Data Created and Compiled By: Robin Williams (robin@rtwilson.com)</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-6">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">About the Visualization</h5>
+                    <!-- <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> -->
+                    <p class="card-text">Charts Created With: <a href="https://plot.ly/javascript/">Plotly.js</a> </p>
+                    <p class="card-text">Map Created With: <a href="https://leafletjs.com/">Leaflet.js</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+</body>
+<footer>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+    <!-- Plotly -->
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
+    <!-- Visualizations -->
+    <script src="graphs/const.js"></script>
+    <script src="graphs/a.js"></script>
+    <script src="graphs/b_fatalities.js"></script>
+    <script src="graphs/b_census.js"></script>
+    <script src="graphs/c.js"></script>
+</footer>
+
+</html>
