@@ -51,7 +51,7 @@ Plotly.d3.text("data/choleraDeathLocations.csv", function (text) {
             attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
             maxZoom: 18,
             id: 'mapbox.streets',
-            accessToken: 'pk.eyJ1Ijoib3lhbGNpbiIsImEiOiJjam0zc29mbDEwdW1nM3JtdTd6NDJmdXFnIn0.QlWi2opj-m-jZlSOPNl_QA'
+            accessToken: 'pk.eyJ1Ijoic2Vhbnl0YWsiLCJhIjoiY2ptOTFzYnJlMDd4dzNram9wejV6NWUzNCJ9.Pj7WJobAaBWN7naYDiw5XA'
         }).addTo(map);
 
         // Add the markers for the death locations
@@ -62,6 +62,7 @@ Plotly.d3.text("data/choleraDeathLocations.csv", function (text) {
                 fillOpacity: 0.85,
                 radius: cellValues[0][i]
             }).addTo(map);
+            deathCircle.bindPopup(`Deaths: ${cellValues[0][i]} <br>Latitude: ${cellValues[2][i]} | Longitude: ${cellValues[1][i]}`)
         }
 
         // Add the markers for the pump locations
