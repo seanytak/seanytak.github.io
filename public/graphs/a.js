@@ -79,7 +79,7 @@ Plotly.d3.text("data/choleraDeathLocations.csv", function (text) {
                     fillColor: 'blue',
                     fillOpacity: 0.9
                 }).addTo(map);
-            polygons.bindPopup(`Water Well <br>Latitude: ${lat} | Longitude: ${lon}`)
+            polygons.bindPopup(`Water Pump <br>Latitude: ${lat} | Longitude: ${lon}`)
         }
 
         function getSize(d) {
