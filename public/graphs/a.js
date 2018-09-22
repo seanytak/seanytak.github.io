@@ -94,22 +94,5 @@ Plotly.d3.text("data/choleraDeathLocations.csv", function (text) {
         var legend = L.control({
             position: 'bottomright'
         });
-
-
-        legend.onAdd = function (map) {
-
-            var div = L.DomUtil.create('div', 'info legend');
-            var grades = [1, 2, 5, 15, 40, 70, 120];
-            var labels = ["<h3>Death Counts</h3>"];
-            labels.push("<p style='text-align:center;'>You may hover over the figures to obtain more info</p>");
-            for (var i = 0; i < grades.length; i++) {
-                labels.push('<div class="tooltip"><div class="circle" style="width:' + getSize(grades[i]) + 'px; height:' + getSize(grades[i]) + 'px">' + '<span class="tooltiptext">' + grades[i] + '</span></div></div>');
-            }
-            labels.push('<div class="tooltip"><span class="tooltiptext">Pump</span><img src="data/waterpump.png"></div>')
-            div.innerHTML = labels.join('');
-            return div;
-        };
-
-        legend.addTo(map);
     });
 });
