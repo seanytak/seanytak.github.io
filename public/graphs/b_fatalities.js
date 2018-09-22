@@ -1,4 +1,4 @@
-Plotly.d3.tsv("/data/naplesCholeraAgeSexData.tsv", function (err, rows) {
+Plotly.d3.tsv("data/naplesCholeraAgeSexData.tsv", function (err, rows) {
 
     const headerNames = Plotly.d3.keys(rows[0]);
 

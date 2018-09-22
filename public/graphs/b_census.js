@@ -1,4 +1,4 @@
-Plotly.d3.csv("/data/UKcensus1851.csv", function (err, rows) {
+Plotly.d3.csv("data/UKcensus1851.csv", function (err, rows) {
 
     const headerNames = Plotly.d3.keys(rows[0]);
 
